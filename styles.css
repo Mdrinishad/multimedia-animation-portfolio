@@ -8,6 +8,38 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Default (Light Mode) */
+body {
+  background: #ffffff;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode nav ul li a {
+  color: #ff9800;
+}
+
+
 /* Hero Section */
 .hero {
   background: linear-gradient(to right, #141E30, #243B55);
@@ -161,3 +193,4 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
